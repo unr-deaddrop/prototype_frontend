@@ -20,8 +20,8 @@
                 <hr class="sidebar-divider my-0">
                 <ul class="navbar-nav text-light" id="accordionSidebar">
                     <li class="nav-item" style="text-align: center;"><span style="/*margin-left: 0.5rem;*/"><strong>Reporting</strong></span></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
-                    <li class="nav-item"><a class="nav-link active" href="log_listing.html"><i class="far fa-list-alt"></i><span>Logs</span></a></li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="log_listing.html"><i class="far fa-list-alt"></i><span>Logs</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="reporting.html"><i class="fas fa-print"></i><span>Reporting</span></a></li>
                     <li class="nav-item" style="margin-top: -10px;margin-right: 0px;margin-bottom: -10px;">
                         <hr style="border-width: 4px;margin-left: 10px;margin-right: 10px;">
@@ -97,26 +97,60 @@
                 </nav>
                 <div class="container-fluid">
                     <div class="d-sm-flex justify-content-between align-items-center mb-4">
-                        <h3 class="text-dark mb-0">Logs</h3><a class="btn btn-primary btn-sm d-none d-sm-inline-block" role="button" href="#"><i class="fas fa-print fa-sm text-white-50"></i>&nbsp;Go to reporting</a>
+                        <h3 class="text-dark mb-0">Dashboard</h3>
                     </div>
                     <div class="row">
-                        <div class="col-xl-6">
+                        <div class="col-lg-7 col-xl-8">
                             <div class="card shadow mb-4">
                                 <div class="card-header d-flex justify-content-between align-items-center">
-                                    <h6 class="text-primary fw-bold m-0">Server-generated logs</h6>
+                                    <h6 class="text-primary fw-bold m-0">Statistics</h6>
+                                </div>
+                                <div class="card-body" style="color: black;">
+                                    <div class="row">
+                                        <div class="col-xl-6 d-flex flex-column"><span><strong>Registered endpoints</strong>: 24</span><span><strong>Messages sent:</strong>&nbsp;10 (1.5 kB)</span><span><strong>Messages fetched</strong>: 4 (2.4 kB)</span><span><strong>Ongoing tasks</strong>: 0</span><span><strong>Completed tasks:</strong>&nbsp;0</span></div>
+                                        <div class="col-xl-6 d-flex flex-column"><span><strong>Registered endpoints</strong>: 24</span><span><strong>Messages sent:</strong>&nbsp;10 (1.5 kB)</span><span><strong>Messages fetched</strong>: 4 (2.4 kB)</span><span><strong>Ongoing tasks</strong>: 0</span><span><strong>Completed tasks:</strong>&nbsp;0</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-xl-4">
+                            <div class="card shadow mb-4">
+                                <div class="card-header d-flex justify-content-between align-items-center">
+                                    <h6 class="text-primary fw-bold m-0">Quick links</h6>
+                                </div>
+                                <div class="card-body d-flex flex-column"><a class="btn btn-primary btn-sm d-none d-sm-inline-block" role="button" href="#" style="margin-bottom: 5px;"><i class="fas fa-user-plus fa-sm text-white-50"></i>&nbsp; Go to Django administrative site</a><a class="btn btn-primary btn-sm d-none d-sm-inline-block" role="button" href="command.html" style="margin-bottom: 5px;"><i class="fas fa-wifi fa-sm text-white-50"></i>&nbsp;Issue command</a><a class="btn btn-primary btn-sm d-none d-sm-inline-block" role="button" href="#" style="margin-bottom: 5px;"><i class="fas fa-skull fa-sm text-white-50"></i>&nbsp;Generate new payload</a><a class="btn btn-primary btn-sm d-none d-sm-inline-block" role="button" href="#"><i class="fas fa-clipboard-list fa-sm text-white-50"></i>&nbsp;View recent tasks</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-8">
+                            <div class="card shadow mb-4">
+                                <div class="card-header d-flex justify-content-between align-items-center">
+                                    <h6 class="text-primary fw-bold m-0">Communications (last 24 hours)</h6>
+                                    <div class="dropdown no-arrow"><button class="btn btn-link btn-sm dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button"><i class="fas fa-ellipsis-v text-gray-400"></i></button>
+                                        <div class="dropdown-menu shadow dropdown-menu-end animated--fade-in">
+                                            <p class="text-center dropdown-header">Actions</p><a class="dropdown-item" href="#">&nbsp;Go to communications</a>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="card-body">
                                     <div class="chart-area"><canvas data-bss-chart="{&quot;type&quot;:&quot;line&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;Jan&quot;,&quot;Feb&quot;,&quot;Mar&quot;,&quot;Apr&quot;,&quot;May&quot;,&quot;Jun&quot;,&quot;Jul&quot;,&quot;Aug&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;Earnings&quot;,&quot;fill&quot;:true,&quot;data&quot;:[&quot;0&quot;,&quot;10000&quot;,&quot;5000&quot;,&quot;15000&quot;,&quot;10000&quot;,&quot;20000&quot;,&quot;15000&quot;,&quot;25000&quot;],&quot;backgroundColor&quot;:&quot;rgba(78, 115, 223, 0.05)&quot;,&quot;borderColor&quot;:&quot;rgba(78, 115, 223, 1)&quot;}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:false,&quot;legend&quot;:{&quot;display&quot;:false,&quot;labels&quot;:{&quot;fontStyle&quot;:&quot;normal&quot;}},&quot;title&quot;:{&quot;fontStyle&quot;:&quot;normal&quot;},&quot;scales&quot;:{&quot;xAxes&quot;:[{&quot;gridLines&quot;:{&quot;color&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;zeroLineColor&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;drawBorder&quot;:false,&quot;drawTicks&quot;:false,&quot;borderDash&quot;:[&quot;2&quot;],&quot;zeroLineBorderDash&quot;:[&quot;2&quot;],&quot;drawOnChartArea&quot;:false},&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#858796&quot;,&quot;fontStyle&quot;:&quot;normal&quot;,&quot;padding&quot;:20}}],&quot;yAxes&quot;:[{&quot;gridLines&quot;:{&quot;color&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;zeroLineColor&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;drawBorder&quot;:false,&quot;drawTicks&quot;:false,&quot;borderDash&quot;:[&quot;2&quot;],&quot;zeroLineBorderDash&quot;:[&quot;2&quot;]},&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#858796&quot;,&quot;fontStyle&quot;:&quot;normal&quot;,&quot;padding&quot;:20}}]}}}"></canvas></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-6">
+                        <div class="col-xl-4">
                             <div class="card shadow mb-4">
                                 <div class="card-header d-flex justify-content-between align-items-center">
-                                    <h6 class="text-primary fw-bold m-0">Agent-generated logs</h6>
+                                    <h6 class="text-primary fw-bold m-0">Endpoint communication share</h6>
+                                    <div class="dropdown no-arrow"><button class="btn btn-link btn-sm dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button"><i class="fas fa-ellipsis-v text-gray-400"></i></button>
+                                        <div class="dropdown-menu shadow dropdown-menu-end animated--fade-in">
+                                            <p class="text-center dropdown-header">Actions</p><a class="dropdown-item" href="#">View all endpoints</a><a class="dropdown-item" href="#">View communications</a>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="card-body">
-                                    <div class="chart-area"><canvas data-bss-chart="{&quot;type&quot;:&quot;line&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;Jan&quot;,&quot;Feb&quot;,&quot;Mar&quot;,&quot;Apr&quot;,&quot;May&quot;,&quot;Jun&quot;,&quot;Jul&quot;,&quot;Aug&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;Earnings&quot;,&quot;fill&quot;:true,&quot;data&quot;:[&quot;0&quot;,&quot;10000&quot;,&quot;5000&quot;,&quot;15000&quot;,&quot;10000&quot;,&quot;20000&quot;,&quot;15000&quot;,&quot;25000&quot;],&quot;backgroundColor&quot;:&quot;rgba(78, 115, 223, 0.05)&quot;,&quot;borderColor&quot;:&quot;rgba(78, 115, 223, 1)&quot;}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:false,&quot;legend&quot;:{&quot;display&quot;:false,&quot;labels&quot;:{&quot;fontStyle&quot;:&quot;normal&quot;}},&quot;title&quot;:{&quot;fontStyle&quot;:&quot;normal&quot;},&quot;scales&quot;:{&quot;xAxes&quot;:[{&quot;gridLines&quot;:{&quot;color&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;zeroLineColor&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;drawBorder&quot;:false,&quot;drawTicks&quot;:false,&quot;borderDash&quot;:[&quot;2&quot;],&quot;zeroLineBorderDash&quot;:[&quot;2&quot;],&quot;drawOnChartArea&quot;:false},&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#858796&quot;,&quot;fontStyle&quot;:&quot;normal&quot;,&quot;padding&quot;:20}}],&quot;yAxes&quot;:[{&quot;gridLines&quot;:{&quot;color&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;zeroLineColor&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;drawBorder&quot;:false,&quot;drawTicks&quot;:false,&quot;borderDash&quot;:[&quot;2&quot;],&quot;zeroLineBorderDash&quot;:[&quot;2&quot;]},&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#858796&quot;,&quot;fontStyle&quot;:&quot;normal&quot;,&quot;padding&quot;:20}}]}}}"></canvas></div>
+                                    <div class="chart-area"><canvas data-bss-chart="{&quot;type&quot;:&quot;doughnut&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;Direct&quot;,&quot;Social&quot;,&quot;Referral&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;&quot;,&quot;backgroundColor&quot;:[&quot;#4e73df&quot;,&quot;#1cc88a&quot;,&quot;#36b9cc&quot;],&quot;borderColor&quot;:[&quot;#ffffff&quot;,&quot;#ffffff&quot;,&quot;#ffffff&quot;],&quot;data&quot;:[&quot;50&quot;,&quot;30&quot;,&quot;15&quot;]}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:false,&quot;legend&quot;:{&quot;display&quot;:false,&quot;labels&quot;:{&quot;fontStyle&quot;:&quot;normal&quot;}},&quot;title&quot;:{&quot;fontStyle&quot;:&quot;normal&quot;}}}"></canvas></div>
+                                    <div class="text-center small mt-4"><span class="me-2"><i class="fas fa-circle text-primary"></i>&nbsp;Direct</span><span class="me-2"><i class="fas fa-circle text-success"></i>&nbsp;Social</span><span class="me-2"><i class="fas fa-circle text-info"></i>&nbsp;Refferal</span></div>
                                 </div>
                             </div>
                         </div>
@@ -125,7 +159,7 @@
                         <div class="col">
                             <div class="card shadow">
                                 <div class="card-header py-3">
-                                    <p class="text-primary m-0 fw-bold">Logs (this must be server paginated!)</p>
+                                    <p class="text-primary m-0 fw-bold">Running tasks</p>
                                 </div>
                                 <div class="card-body">
                                     <div class="row">
@@ -146,10 +180,9 @@
                                             <thead>
                                                 <tr>
                                                     <th>ID</th>
-                                                    <th>Source</th>
-                                                    <th>User</th>
-                                                    <th>Task</th>
-                                                    <th>Timestamp</th>
+                                                    <th>Endpoint</th>
+                                                    <th>Initiated by</th>
+                                                    <th>Start time</th>
                                                     <th>Actions</th>
                                                 </tr>
                                             </thead>
@@ -158,27 +191,10 @@
                                                     <td>1</td>
                                                     <td><a href="endpoint_detail.html">WORKSTATION1</a></td>
                                                     <td><a href="_profile.html">User</a></td>
-                                                    <td><a href="task_detail.html">Task</a></td>
                                                     <td>2023-11-06 14:34:23</td>
                                                     <td>
-                                                        <div class="btn-group"><button class="btn btn-primary" type="button">Download data</button><button class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" type="button"></button>
-                                                            <div class="dropdown-menu"><a class="dropdown-item" href="endpoint_detail.html">View associated endpoint</a><a class="dropdown-item" href="_profile.html">View associated user</a><a class="dropdown-item" href="task_detail.html">View associated task</a>
-                                                                <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Export data as JSON</a>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>2</td>
-                                                    <td><a href="#">WORKSTATION1</a></td>
-                                                    <td><a href="#">User</a></td>
-                                                    <td>(none)</td>
-                                                    <td>2023-11-06 14:34:23</td>
-                                                    <td>
-                                                        <div class="btn-group"><button class="btn btn-primary" type="button">Download data</button><button class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" type="button"></button>
-                                                            <div class="dropdown-menu"><a class="dropdown-item" href="#">View associated endpoint</a><a class="dropdown-item" href="#">View associated user</a><a class="dropdown-item" href="#">View associated task</a>
-                                                                <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Export data as JSON</a>
-                                                            </div>
+                                                        <div class="btn-group open"><a class="btn btn-primary" role="button" href="task_detail.html">View details</a><button class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="true" type="button"></button>
+                                                            <div class="dropdown-menu show" data-bs-popper="none"><a class="dropdown-item" href="endpoint_detail.html">View associated endpoint</a><a class="dropdown-item" href="_profile.html">View initiating user</a></div>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -187,9 +203,8 @@
                                                 <tr>
                                                     <td><strong>ID</strong></td>
                                                     <td><strong>Name</strong></td>
-                                                    <td><strong>User</strong></td>
-                                                    <td><strong>Task</strong></td>
-                                                    <td><strong>Timestamp</strong></td>
+                                                    <td><strong>Initiated by</strong></td>
+                                                    <td><strong>Start time</strong></td>
                                                     <td><strong>Actions</strong></td>
                                                 </tr>
                                             </tfoot>
